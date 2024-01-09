@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MarbleWars</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="screen">
+
+        <canvas id="game" width="300" height="150">
+            canvas要素が使える環境が必要です・・・オヨー(;o;)
+        </canvas>
+
+        <div id="menu">
+            <h1 id="title">MarbleWars</h1>
+            <div id="entry">
+                <input type="text" id="name" name="name" placeholder="name" />
+                <button id="join" class="button" type="button">Join</button>
+                <button id="start" class="button" type="button">GameStart</button>
+            </div>
+            <div id="players">
+                <h2 class="players">- Players -</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
