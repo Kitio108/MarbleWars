@@ -11,7 +11,7 @@ var io = require('socket.io')(http);
 var html = fs.readFileSync("game.html");
 var css = fs.readFileSync("style.css");
 var js = fs.readFileSync("game.js");
-var PORT = 8000;
+var PORT = Number(!!process.env.PORT) || 8000;;
 
 var server = http.createServer((req, res) => {
 
